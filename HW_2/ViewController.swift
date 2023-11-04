@@ -16,6 +16,14 @@ class ViewController: UIViewController {
     
     @IBOutlet var changeColorButton: UIButton!
     
+    enum Color {
+        case red
+        case yellow
+        case green
+    }
+    
+    var currentColor: Color = .red
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,14 +31,27 @@ class ViewController: UIViewController {
         yellowRoundView.layer.cornerRadius = 50
         greenRoundView.layer.cornerRadius = 50
         
-       
+        redRoundView.alpha = 0.3
+        yellowRoundView.alpha = 0.3
+        greenRoundView.alpha = 0.3
     }
 
 
     @IBAction func changeTrafficColor(_ sender: UIButton) {
         changeColorButton.setTitle("NEXT", for: .normal)
-    
+        redRoundView.alpha = 0.3
+        yellowRoundView.alpha = 0.3
+        greenRoundView.alpha = 0.3
+        if currentColor == .red {
+            redRoundView.alpha = 1
+            currentColor = .yellow
+        } else if currentColor == .yellow {
+            yellowRoundView.alpha = 1
+            currentColor = .green
+        } else {
+            greenRoundView.alpha = 1
+            currentColor = .red
+        }
     }
-    
 }
 
