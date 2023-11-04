@@ -38,10 +38,11 @@ class ViewController: UIViewController {
 
 
     @IBAction func changeTrafficColor(_ sender: UIButton) {
-        changeColorButton.setTitle("NEXT", for: .normal)
+        sender.setTitle("NEXT", for: .normal)
         redRoundView.alpha = 0.3
         yellowRoundView.alpha = 0.3
         greenRoundView.alpha = 0.3
+        
         if currentColor == .red {
             redRoundView.alpha = 1
             currentColor = .yellow
