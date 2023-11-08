@@ -16,20 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYo-1g-9Pd">
-                                <rect key="frame" x="151" y="825" width="128" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="128" id="Ye2-MH-b8w"/>
-                                    <constraint firstAttribute="height" constant="48" id="vzT-nv-xv7"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="START"/>
-                                <connections>
-                                    <action selector="changeTrafficColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OXY-56-be8"/>
-                                </connections>
-                            </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="JRD-TN-pOd">
-                                <rect key="frame" x="170" y="79" width="90" height="306"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="JRD-TN-pOd">
+                                <rect key="frame" x="170" y="313" width="90" height="306"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgL-3H-93X">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
@@ -57,15 +45,21 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYo-1g-9Pd">
+                                <rect key="frame" x="151" y="442" width="128" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="Ye2-MH-b8w"/>
+                                    <constraint firstAttribute="height" constant="48" id="vzT-nv-xv7"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START"/>
+                                <connections>
+                                    <action selector="changeTrafficColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OXY-56-be8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EYo-1g-9Pd" secondAttribute="bottom" constant="25" id="7Zb-bc-dwK"/>
-                            <constraint firstItem="JRD-TN-pOd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="e2H-zB-9SM"/>
-                            <constraint firstItem="JRD-TN-pOd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sYs-as-Qjx"/>
-                            <constraint firstItem="EYo-1g-9Pd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="zAy-Gn-faQ"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="changeColorButton" destination="EYo-1g-9Pd" id="mer-jx-OW0"/>
@@ -81,13 +75,13 @@
     </scenes>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
