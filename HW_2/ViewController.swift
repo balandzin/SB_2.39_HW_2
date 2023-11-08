@@ -16,20 +16,21 @@ class ViewController: UIViewController {
     
     @IBOutlet var changeColorButton: UIButton!
     
+    var currentColor: Color = .red
+    
     enum Color {
         case red
         case yellow
         case green
     }
     
-    var currentColor: Color = .red
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        redRoundView.layer.cornerRadius = 45
-        yellowRoundView.layer.cornerRadius = 45
-        greenRoundView.layer.cornerRadius = 45
+        redRoundView.layer.cornerRadius = 60
+        yellowRoundView.layer.cornerRadius = 60
+        greenRoundView.layer.cornerRadius = 60
         
         redRoundView.alpha = 0.3
         yellowRoundView.alpha = 0.3
