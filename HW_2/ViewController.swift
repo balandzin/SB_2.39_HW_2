@@ -56,6 +56,3 @@ class ViewController: UIViewController {
         }
     }
 }
-
-
-// for git
